@@ -19,7 +19,7 @@ def mul(a, b):
 
 def div(a, b):
     try:
-        return
+        return a/b
     except ZeroDivisionError:
         raise ZeroDivisionError
 
