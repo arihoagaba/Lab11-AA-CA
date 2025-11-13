@@ -1,6 +1,6 @@
+#https://github.com/arihoagaba/Lab11-AA-CA.git
 #Partner 1: Ariho Agaba
 # Partner 2: Colton Allen
-#https://github.com/arihoagaba/Lab11-AA-CA.git
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -12,15 +12,19 @@ One function per operation, in order.
 import math
 
 def square_root(a): 
-    math.sqrt(a)# raise ValueError if a < 0
+    try:
+        return math.sqrt(a)
+    except:
+        raise ValueError
+    # raise ValueError if a < 0
     
 def hypotenuse(a, b): 
-    math.hypot(a, b) # can have negative nums
+    return math.hypot(a, b) # can have negative nums
 
 def add(a, b): 
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -32,11 +36,8 @@ def div(a, b):
     except ZeroDivisionError:
         raise ZeroDivisionError
 
-def log(a, b):
-    try:
-        return math.log(b, a)
-    except ValueError:
-        raise ValueError
+def logarithm(a, b):
+    return math.log(b, a)
 
 def exp(a, b):
     return a**b
