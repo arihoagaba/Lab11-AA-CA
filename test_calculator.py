@@ -1,3 +1,7 @@
+# https://github.com/arihoagaba/Lab11-AA-CA
+# Partner 1: Ariho Agaba
+# Partner 2: Colton Allen
+
 import unittest
 from calculator import *
 
@@ -26,6 +30,9 @@ class TestCalculator(unittest.TestCase):
     def test_divide_by_zero(self): # 1 assertion
         self.assertRaises(ZeroDivisionError, div, 10, 0)
 
+    def test_log_invalid_base(self): # 1 assertion
+        self.assertRaises(ValueError, log, 10, 0)
+
     def test_logarithm(self): # 3 assertions
         self.assertEqual(log(10, 1), 0)
         self.assertEqual(log(19, 1), 0)
@@ -53,3 +60,4 @@ class TestCalculator(unittest.TestCase):
 # Do not touch this
 if __name__ == "__main__":
     unittest.main()
+
