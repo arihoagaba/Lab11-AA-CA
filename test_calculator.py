@@ -1,3 +1,8 @@
+# https://github.com/arihoagaba/Lab11-AA-CA
+# Partner 1: Ariho Agaba
+# Partner 2: Colton Allen
+
+
 import unittest
 from calculator import add, sub, div, log
 
