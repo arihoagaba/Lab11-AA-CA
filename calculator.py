@@ -1,3 +1,6 @@
+#Partner 1: Ariho Agaba
+# Partner 2: Colton Allen
+#https://github.com/arihoagaba/Lab11-AA-CA.git
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -5,7 +8,7 @@ calculator.py
 One function per operation, in order.
 """
 # First example
-#https://github.com/arihoagaba/Lab11-AA-CA.git
+
 import math
 
 def square_root(a): 
