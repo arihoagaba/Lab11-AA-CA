@@ -34,7 +34,7 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
     #     # call log function inside, example:
-        self.assertRaises(TypeError,log(0, "2"))
+        self.assertRaises(ValueError,log(-1, 10))
     #     fill in code
 
     def test_hypotenuse(self): # 3 assertions
